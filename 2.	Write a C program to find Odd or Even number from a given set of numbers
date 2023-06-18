@@ -1,18 +1,14 @@
-#include<stdio.h>
-#include<conio.h>
-int main()
-{
-int num,i;
-printf("\nEnter the value of n:");
-scanf("%d",&num);
-printf("\nEven numbers between 1 and %d are:\n",num);
-for(i=1;i<num;i++)
-{
-if(i%2==0)
-{
-printf("%d\t",i);
-}
-}
-getch();
-return 0;
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    // true if num is perfectly divisible by 2
+    if(num % 2 == 0)
+        printf("%d is even.", num);
+    else
+        printf("%d is odd.", num);
+    
+    return 0;
 }
